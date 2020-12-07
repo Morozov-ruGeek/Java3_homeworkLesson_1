@@ -37,7 +37,7 @@ public class BoxOfFruit <T extends Fruit> {
             return 0;
         } else {
         return fruitList.size() * fruitList.get(0).getWeight();
-    }
+        }
     }
 
     // метод для "пересыпания" фруктов в другой ящик

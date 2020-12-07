@@ -22,7 +22,6 @@ public class Main {
         List<String> list = convertToList(array);
         System.out.println("Task 2\n" + list.getClass() + " : " + list + "\n");
 
-
         System.out.println("Task 3");
 
         Apple firstApple = new Apple();
