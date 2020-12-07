@@ -48,6 +48,6 @@ public class BoxOfFruit <T extends Fruit> {
 
     // сравнение веса коробок
     boolean compare(BoxOfFruit<? extends Fruit> box) {
-        return this.getWeight() == box.getWeight();
+        return Math.abs(this.getWeight() - box.getWeight()) < 0.00001;
     }
 }
