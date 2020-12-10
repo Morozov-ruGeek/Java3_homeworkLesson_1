@@ -37,7 +37,7 @@ public class BoxOfFruit <T extends Fruit> {
             return 0;
         } else {
         return fruitList.size() * fruitList.get(0).getWeight();
-    }
+        }
     }
 
     // метод для "пересыпания" фруктов в другой ящик
@@ -48,6 +48,6 @@ public class BoxOfFruit <T extends Fruit> {
 
     // сравнение веса коробок
     boolean compare(BoxOfFruit<? extends Fruit> box) {
-        return this.getWeight() == box.getWeight();
+        return Math.abs(this.getWeight() - box.getWeight()) < 0.00001;
     }
 }
